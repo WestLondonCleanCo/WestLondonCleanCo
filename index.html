@@ -1,64 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>West London Clean Co.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West London Clean Co</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
     }
+
+    /* Top Banner */
     header {
-      background-color: #cce5ff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 3px solid #99ccff;
+      background-color: #1e90ff; /* Blue banner */
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 28px;
-      font-weight: bold;
-      color: #007acc;
+      font-size: 2.2em;
     }
-    .contact-info {
-      text-align: right;
-      font-size: 0.95em;
-      color: #007acc;
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.1em;
     }
-    nav {
-      background-color: #e6f2ff;
-      padding: 10px 40px;
-      display: flex;
+
+    /* Services Section */
+    .services {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .services h2 {
+      text-align: center;
+      color: #1e90ff;
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    nav a {
-      text-decoration: none;
-      color: #007acc;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
+
+    .service {
+      background: #f0f8ff;
+      padding: 15px;
+      border-radius: 6px;
       text-align: center;
-      padding: 60px 40px;
-      background-color: #f2f9ff;
-      border-bottom: 1px solid #cce0ff;
+      transition: transform 0.2s ease;
     }
-    .hero h2 {
-      font-size: 36px;
-      color: #007acc;
-      margin-bottom: 15px;
+
+    .service:hover {
+      transform: translateY(-5px);
     }
-    .hero p {
-      font-size: 18px;
-      color: #555;
+
+    .service h3 {
+      margin-top: 0;
+      color: #333;
     }
-    .section {
-      padding
+
+    .service p {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #1e90ff;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e90ff;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <header>
+    <h1>West London Clean Co</h1>
+    <p>📞 07447 617297 | ✉️ westlondoncleanco@gmail.com</p>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Standard Cleans</h3>
+        <p>£15/hr</p>
+      </div>
+      <div class="service">
+        <h3>Deep Cleans</h3>
+        <p>£25/hr</p>
+      </div>
+      <div class="service">
+        <h3>End of Tenancy Cleans</h3>
+        <p>Contact us for a quote</p>
+      </div>
+      <div class="service">
+        <h3>Airbnb Cleans</h3>
+        <p>Flexible pricing</p>
+      </div>
+      <div class="service">
+        <h3>Commercial & Office Cleans</h3>
+        <p>Tailored packages available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 West London Clean Co. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
