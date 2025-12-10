@@ -1,136 +1,164 @@
----
-layout: default
-title: West London Clean Co.
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>West London Clean Co.</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #1a1a1a;
-      background: #ffffff;
-      line-height: 1.6;
-    }
-    header {
-      background: #f5f5f5;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: 700;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-    .hero {
-      padding: 80px 40px;
-      text-align: center;
-      background: #fafafa;
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .section {
-      padding: 60px 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .services ul, .prices ul, .faq ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li, .prices li, .faq li {
-      margin-bottom: 15px;
-      padding: 10px 0;
-      border-bottom: 1px solid #e7e7e7;
-    }
-    .contact {
-      text-align: center;
-    }
-    footer {
-      background: #f5f5f5;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-      border-top: 1px solid #e0e0e0;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West London Clean Co.</title>
+  <style>
+    /* Color Palette: Primary Blue (#007bff), Secondary Blue (#e9f2ff), Text (#1a1a1a), Background (White) */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: #007bff; /* Primary Blue Header */
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #e9f2ff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff; /* White text for logo */
+    }
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #ffffff; /* White text for navigation */
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e9f2ff; /* Lighter blue on hover */
+    }
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background: #f0f8ff; /* Very Light Blue/Off-White for hero */
+      border-bottom: 1px solid #cce0ff;
+    }
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #007bff; /* Blue heading */
+    }
+    .hero p {
+      font-size: 18px;
+      color: #495057;
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #007bff; /* Blue section headings */
+      text-align: center;
+      border-bottom: 2px solid #007bff;
+      display: inline-block;
+      padding-bottom: 5px;
+      width: 100%;
+    }
+    .services ul, .prices ul, .faq ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .services li, .prices li {
+      background: #ffffff;
+      border: 1px solid #cce0ff; /* Light blue border */
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 300px; /* Flex layout for cards */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+      font-weight: 600;
+    }
+    .services li:hover, .prices li:hover {
+      transform: translateY(-5px);
+    }
+    .prices li span {
+      font-weight: 700;
+      color: #007bff;
+      float: right;
+    }
+    .about {
+      background: #e9f2ff; /* Secondary Blue for About section */
+      border-radius: 10px;
+      margin-bottom: 30px;
+      padding: 40px;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    footer {
+      background: #007bff; /* Primary Blue Footer */
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      color: #ffffff; /* White text */
+      font-weight: 500;
+    }
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .service-item {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>West London Clean Co.</h1>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#prices">Prices</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h1>West London Clean Co.</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h2>Professional & Affordable Cleaning in West London</h2>
-  <p>Reliable. Efficient. High-quality cleaning tailored to your needs.</p>
+  <h2>Professional & Affordable Cleaning in West London</h2>
+  <p>Reliable. Efficient. High-quality cleaning tailored to your needs.</p>
+  <div class="image-container">
+    
+  </div>
 </section>
 
 <section id="services" class="section services">
-  <h3>Services</h3>
-  <ul>
-    <li>Regular Home Cleaning</li>
-    <li>Deep Cleaning</li>
-    <li>End of Tenancy Cleaning</li>
-    <li>Student Accommodation Cleaning</li>
-    <li>Airbnb / Short-Let Cleaning</li>
-    <li>Office & Commercial Cleaning</li>
-  </ul>
-</section>
-
-<section id="prices" class="section prices">
-  <h3>Prices</h3>
-  <ul>
-    <li>Standard Cleaning — £15/hr</li>
-    <li>Deep Cleaning — from £80</li>
-    <li>End of Tenancy Cleaning — from £120</li>
-    <li>Airbnb Cleaning — £25–£45 depending on size</li>
-  </ul>
-  <p>*All equipment and products can be provided upon request.</p>
-</section>
-
-<section id="about" class="section about">
-  <h3>About Us</h3>
-  <p>West London Clean Co. provides high-quality cleaning services across West London. Our team focuses on professionalism, reliability, and delivering spotless results every time. Whether you're a tenant, landlord, student, or business owner, we ensure your space looks its best.</p>
-</section>
-
-<section id="contact" class="section contact">
-  <h3>Contact / Booking</h3>
-  <p>📞 Phone: 07XXX XXXXXX</p>
-  <p>📧 Email: westlondoncleanco@example.com</p>
-  <p>📍 West London</p>
-  <p>Available 7 days a week</p>
-</section>
-
-<footer>
-  © 2025 West London Clean Co. All rights reserved.
-</footer>
-
-</body>
-</html>
+  <h3>Our Cleaning Services</h3>
+  <ul>
+    <li>
+      <div class="service-item">**Regular Home Cleaning**</div>
+      <p>Keep your home consistently spotless with our routine visits.</p>
+    </li>
+    <li>
+      <div class="service-item">**Deep Cleaning**</div>
+      <p>Comprehensive top-to-bottom cleaning for an exceptional refresh.</p>
+    </li>
+    <li>
+      <div class="service-item">**End of Tenancy Cleaning**</div>
+      <p>Guaranteed clean for securing your deposit or preparing for new tenants.</p>
+    </li>
+    <li>
+      <div class="service-item">**Student Accommodation
